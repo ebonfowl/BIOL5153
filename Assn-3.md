@@ -1,6 +1,6 @@
 1. `rsync -r mt_genomes amcampit@hpc-portal2.hpc.uark.edu:/storage/amcampit`
 
-2. `hpcstoragecp unknown.fa`, which runs this function on unknown.fa:  
+2. `hpcstoragecp unknown.fa mt_genomes`, which runs this function on unknown.fa:  
 
 ```
 hpcstoragecp () {
@@ -39,11 +39,10 @@ makeblastdb -in genomes.fas -dbtype nucl
 blastn -query unknown.fa -db genomes.fas > unknown.vs.genomes.blastn
 ```
 
-4. `rsync -av amcampit@hpc-portal2.hpc.uar
-k.edu:/storage/amcampit/mt_genomes .`
+4. `rsync -av amcampit@hpc-portal2.hpc.uark.edu:/storage/amcampit/mt_genomes .`
 
 5. a) 00:00:02  
    b) Cucurbita  
-   c) I don't really know anything about genetics, but I would assume Curcubita as it has the same number of bases (1584) as unknown.fa
+   c) I don't really know anything about genetics, but I would assume Cucurbita as it has the same number of bases (1584) as unknown.fa
 
 6. Pushed with `git -u push origin main`
