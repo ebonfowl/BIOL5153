@@ -1,7 +1,7 @@
 # BIOL5153
 
 ### **AMC_CV.md**  
-This is a markdown version of my CV   
+This is a markdown version of my CV for assignment 2   
 2/27/23: Uploaded
 
 ### **assn-3.md**
