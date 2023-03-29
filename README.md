@@ -12,3 +12,7 @@ Markdown write-up for assignment 3
 ### **write_pinnacle_slurm.py**
 Slurm maker script for assignment 4  
 3/27/23: Uploaded  
+
+### **write_pinnacle_slurm.py**  
+Updated script that takes args for assignment 5  
+3/29/23: Uploaded  
