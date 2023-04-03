@@ -16,3 +16,4 @@ Slurm maker script for assignment 4
 ### **write_pinnacle_slurm.py**  
 Updated script that takes args for assignment 5  
 3/29/23: Uploaded  
+4/3/23: Updated to allow single-letter options  
