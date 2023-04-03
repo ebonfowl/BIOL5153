@@ -10,10 +10,10 @@ parser = argparse.ArgumentParser(description='This script returns a SLURM script
 parser.add_argument('job', help = 'The name of the SLURM job', type = str)
 
 # add optional arguments
-parser.add_argument('-q', '-queue', help = 'Which HPC queue to utilize', default = 'comp72', type = str)
-parser.add_argument('-nodes', help = 'Number of HPC nodes to utilize on job', default = 1, type = int)
-parser.add_argument('-processors', help = 'Number of HPC processors to utilize on job', default = 1, type = int)
-parser.add_argument('-walltime', help = 'Max time allotted for job', default = 1, type = int)
+parser.add_argument('-q', '--queue', help = 'Which HPC queue to utilize', default = 'comp72', type = str)
+parser.add_argument('-n', '--nodes', help = 'Number of HPC nodes to utilize on job', default = 1, type = int)
+parser.add_argument('-p', '--processors', help = 'Number of HPC processors to utilize on job', default = 1, type = int)
+parser.add_argument('-w', '--walltime', help = 'Max time allotted for job', default = 1, type = int)
 
 # parse arguments
 args = parser.parse_args()
@@ -21,7 +21,7 @@ args = parser.parse_args()
 # Variables
 
 job_name = args.job
-queue = args.q
+queue = args.queue
 walltime = args.nodes
 num_nodes = args.processors
 num_processors = args.walltime
