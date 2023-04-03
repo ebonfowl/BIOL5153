@@ -17,3 +17,4 @@ Slurm maker script for assignment 4
 Updated script that takes args for assignment 5  
 3/29/23: Uploaded  
 4/3/23: Updated to allow single-letter options  
+4/3/23: Updated with -f and -d options to write straight to files/directories  
