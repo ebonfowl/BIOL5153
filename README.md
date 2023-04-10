@@ -18,3 +18,6 @@ Updated script that takes args for assignment 5
 3/29/23: Uploaded  
 4/3/23: Updated to allow single-letter options  
 4/3/23: Updated with -f and -d options to write straight to files/directories  
+
+### **parseGFF.py**  
+4/10/23: uploaded script to output GFF element length  
