@@ -17,13 +17,31 @@ args = parser.parse_args()
 GFF_file = open(args.gff_file, 'r')
 GFF_lines = GFF_file.readlines()
 GFF_file.close()
-GFF_lines.remove(GFF_lines[-1])
 
-# GFF_lines2 = []
+
+
+GFF_lines2 = []
 for line in GFF_lines:
-    # print(line)
-    stripped_line = line.strip()
-    stripped_line2 = stripped_line.split('\t')
-    length = int(stripped_line2[4]) - int(stripped_line2[3]) + 1
-    print(stripped_line2[2] + '\t' + str(length))
+    if line == '\n':
+        GFF_lines.remove(line)
+        continue
+    line = line.strip()
+    line = line.split('\t')
 
+    # define column variables
+    organism = line[0]
+    source = line[1]
+    feature_type = line[2]
+    start = int(line[3])
+    end = int(line[4])
+
+    # fix length
+    line[5] = str(end - start + 1)
+
+    length = line[5]
+    strand = line[6]
+    attributes = line[8]
+
+    print(feature_type + '\t' + length)
+
+    GFF_lines2.append(line)
