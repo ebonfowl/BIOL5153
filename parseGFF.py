@@ -24,6 +24,6 @@ for line in GFF_lines:
     # print(line)
     stripped_line = line.strip()
     stripped_line2 = stripped_line.split('\t')
-    length = int(stripped_line2[4]) - int(stripped_line2[3])
-    print(stripped_line2[3] + '\t' + length)
+    length = int(stripped_line2[4]) - int(stripped_line2[3]) + 1
+    print(stripped_line2[3] + '\t' + str(length))
 
