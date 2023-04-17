@@ -21,3 +21,4 @@ Updated script that takes args for assignment 5
 
 ### **parseGFF.py**  
 4/10/23: uploaded script to output GFF element length  
+4/17/23: updated to parse sequence info from FASTA  
